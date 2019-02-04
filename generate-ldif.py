@@ -5,7 +5,6 @@ def generateLdifEntry(file, seed):
     seed=str(seed)
     file.write("dn: uid=" + firstName + seed + "." + lastName + "," + baseDn + "\n")
     file.write("uid: " + firstName + seed + "." + lastName + "\n")
-    file.write("cn: " + firstName + " " + lastName + "\n")
     file.write("\n")
 
 
